@@ -9,7 +9,7 @@
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 	/* NODE has only 2 childs / one level || No tree*/
-	if (!node->parent)
+	if (!node || !node->parent)
 		return (NULL);
 
 	if (node->parent->parent)
